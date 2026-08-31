@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html> informa ao navegador que este documento segue o padrão moderno do HTML5. -->
+
+<html lang="pt-BR">
+<!-- <html> é a raiz que encapsula todo o código do site. O atributo lang define o idioma principal. -->
+
+<head>
+    <!-- <head> armazena metadados e configurações técnicas fundamentais que não aparecem visualmente na página. -->
+
+    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8"> define o mapa de caracteres universal. Garante exibição correta de acentos e cedilha. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport"> força o layout a se adaptar ao tamanho da tela de celulares, tablets e computadores. -->
+
+    <meta name="description" content="O maior dicionário prático e visual de tags HTML existente em um único arquivo.">
+    <!-- <meta name="description"> fornece um resumo da página para motores de busca como o Google. -->
+
+    <meta name="keywords" content="HTML, HTML5, Tags, Programação, Web">
+    <!-- <meta name="keywords"> indica palavras-chave sobre o assunto do site (pouco usada hoje em dia, mas válida). -->
+
+    <meta name="author" content="Desenvolvedor Full Stack">
+    <!-- <meta name="author"> especifica o nome do criador ou proprietário do documento. -->
+
+    <title>A Enciclopédia Absoluta do HTML5</title>
+    <!-- <title> define o texto exato que aparecerá na aba do navegador ou nos resultados de busca. -->
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link> conecta arquivos externos. Neste caso, define o pequeno ícone (favicon) da aba do navegador. -->
+
+    <style>
+        /* <style> incorpora código CSS interno para estilizar os elementos HTML visíveis. */
+        body { font-family: system-ui, sans-serif; margin: 30px; background: #fafafa; color: #222; }
+        header, footer { background: #111; color: #fff; padding: 25px; border-radius: 6px; }
+        nav { margin: 15px 0; padding: 10px; background: #eee; border-radius: 4px; }
+        main { background: #fff; padding: 25px; margin: 20px 0; border: 1px solid #ddd; border-radius: 6px; }
+        section { margin-bottom: 40px; padding: 15px; border-left: 4px solid #0066cc; background: #fdfdfd; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #bbb; padding: 8px; text-align: left; }
+        th { background: #f0f0f0; }
+        dialog { border: 2px solid #333; border-radius: 8px; padding: 20px; }
+    </style>
+</head>
+
+<body>
+    <!-- <body> contém todo o conteúdo visual, estrutural e interativo que o usuário final verá na tela. -->
+
+    <header>
+        <!-- <header> define o cabeçalho principal da página ou de uma seção. Agrupa logos, títulos e menus. -->
+        
+        <hgroup>
+            <!-- <hgroup> agrupa múltiplos títulos relacionados (como um título principal e um subtítulo). -->
+            <h1>O Universo do HTML</h1>
+            <!-- <h1> é o título de nível máximo e maior importância da página. Só deve existir um por página. -->
+            <p>Abaixo você verá quase todas as tags existentes no HTML5 atual.</p>
+        </hgroup>
+
+        <nav>
+            <!-- <nav> demarca uma seção com links de navegação principais para movimentação no site. -->
+            <a href="#texto">Formatos</a> | 
+            <!-- <a> cria hiperlinks. O atributo href indica o destino. target="_blank" abriria em nova aba. -->
+            <a href="#estruturais">Semântica</a> | 
+            <a href="#midia">Multimídia</a> | 
+            <a href="#formularios">Formulários</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <main> indica o conteúdo central e exclusivo da página. Não deve se repetir em outras páginas do site. -->
+
+        <section id="texto">
+            <!-- <section> representa uma seção genérica de conteúdo temático estruturado. -->
+            <h2>1. Elementos de Texto Avançados e Semântica Estrita</h2>
+            <!-- <h2> define subtítulos de segundo nível, dividindo as grandes seções do site. -->
+
+            <h3>Subtítulos Menores (H3 a H6)</h3>
+            <!-- <h3> define subtítulos de terceiro nível. -->
+            <h4>Subtítulo Nível 4</h4>
+            <!-- <h4> define subtítulos de quarto nível. -->
+            <h5>Subtítulo Nível 5</h5>
+            <!-- <h5> define subtítulos de quinto nível. -->
+            <h6>Subtítulo Nível 6</h6>
+            <!-- <h6> define o sexto e menor nível de título disponível no HTML. -->
+
+            <p>Parágrafos usam a tag P. Podemos criar quebras de linha <br> imediatas e contínuas.</p>
+            <!-- <p> serve para criar blocos de parágrafos de texto comum. -->
+            <!-- <br> força uma quebra de linha física no texto sem criar um novo parágrafo. -->
+
+            <p>Este é um texto com uma <wbr>quebra opcional se a tela for pequena demais para caber.</p>
+            <!-- <wbr> (Word Break Opportunity) avisa o navegador onde ele pode quebrar a linha se faltar espaço. -->
+
+            <p>Texto em <strong>negrito semântico (importante)</strong> e texto em <b>negrito puramente visual</b>.</p>
+            <!-- <strong> indica forte importância semântica (leitores de tela enfatizam). -->
+            <!-- <b> deixa o texto em negrito por motivos puramente visuais, sem peso de importância. -->
+
+            <p>Texto em <em>itálico semântico (ênfase)</em> e texto em <i>itálico puramente visual</i>.</p>
+            <!-- <em> dá ênfase falada e semântica ao texto. -->
+            <!-- i deixa o texto inclinado (itálico) puramente por design ou termos técnicos estrangeiros. -->
+
+            <p>Código de programação na tela: <code>console.log("Olá Mundo!");</code></p>
+            <!-- <code> formata o texto com fonte monoespaçada, ideal para representar trechos de código. -->
+
+            <p>Para blocos de código inteiros mantendo espaços e quebras exatamente como digitados:</p>
+            <pre>
+function teste() {
+    return true;
+}
+            </pre>
+            <!-- <pre> exibe o texto pré-formatado respeitando espaços em branco, tabulações e quebras de linha. -->
+
+            <p>Entrada do teclado do usuário: Pressione <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar.</p>
+            <!-- <kbd> identifica entradas de dados do usuário, como teclas do teclado ou comandos de voz. -->
+
+            <p>Saída de um sistema de computador: <samp>Erro 404: Não encontrado</samp>.</p>
+            <!-- <samp> representa a saída (output) de um programa de computador ou sistema operacional. -->
+
+            <p>Definição de variáveis em matemática: <var>x</var> = <var>y</var> + 2.</p>
+            <!-- <var> define o nome de uma variável em uma expressão matemática ou contexto de programação. -->
+
+            <p>Termos marcados com <mark>efeito marca-texto amarelo</mark> para atenção imediata.</p>
+            <!-- <mark> destaca um texto simulando uma caneta marca-texto para fins de referência rápida. -->
+
+            <p>Abreviaturas controladas: <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+            <!-- <abbr> define uma abreviação. O atributo title exibe a explicação ao passar o mouse por cima. -->
+
+            <p>Uma definição de termo: <dfn>O HTML</dfn> é uma linguagem de marcação.</p>
+            <!-- <dfn> indica a instância de definição de um termo dentro do texto do parágrafo. -->
+
+            <p>Pequenas citações em linha: <q cite="https://site.com">Penso, logo existo.</q></p>
+            <!-- <q> define uma citação curta em linha. O navegador adiciona as aspas automaticamente. -->
+
+            <p>O nome de uma obra de arte ou livro: <cite>Mona Lisa</cite> de Da Vinci.</p>
+            <!-- <cite> define o título de uma obra criativa, livro, música, filme ou documento. -->
+
+            <p>Podemos mostrar textos <del>deletados/antigos</del> e textos <ins>inseridos/novos</ins>.</p>
+            <!-- <del> risca o texto indicando que ele foi removido ou modificado. -->
+            <!-- <ins> sublinha o texto indicando que ele foi adicionado recentemente ao documento. -->
+
+            <p>Textos rasurados sem peso de deleção: <s>R$ 99,00</s> por R$ 49,00.</p>
+            <!-- <s> renderiza um risco sobre o texto indicando que a informação não é mais correta ou relevante. -->
+
+            <p>Água é H<sub>2</sub>O e área é calculada em m<sup>2</sup>.</p>
+            <!-- <sub> formata o texto como subscrito (abaixo da linha normal). -->
+            <!-- <sup> formata o texto como sobrescrito (acima da linha normal). -->
+
+            <p>Texto com <small>tamanho de fonte reduzido</small> para letras miúdas de contratos.</p>
+            <!-- <small> diminui o tamanho da fonte em um nível, usado para comentários legais ou direitos autorais. -->
+
+            <p>Uma palavra isolada para estilização posterior: <span style="color: red;">Texto em vermelho</span>.</p>
+            <!-- <span> é um container genérico em linha (inline). Não tem efeito visual sem CSS. -->
+
+            <p>Orientação de texto explícita: <bdo dir="rtl">Este texto será lido de trás para frente.</bdo></p>
+            <!-- <bdo> (Bi-Directional Override) força a direção do texto. dir="rtl" muda da direita para a esquerda. -->
+
+            <p>Isolamento de texto bidirecional: <bdi>العربية</bdi> inserido no meio de um texto em português.</p>
+            <!-- <bdi> (Bi-Directional Isolation) isola um texto que pode estar em uma direção diferente do resto. -->
+
+            <p>Uso de caracteres especiais de anotação fonética asiática (Rubi):
+                <ruby>
+                    漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+                    字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+                </ruby>
+            </p>
+            <!-- <ruby> serve para mostrar pequenas anotações de pronúncia acima de caracteres asiáticos. -->
+            <!-- <rt> define o texto da anotação/pronúncia que fica no topo do caractere principal. -->
+            <!-- <rp> define o que exibir caso o navegador antigo não tenha suporte à tag ruby (geralmente parênteses). -->
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html> informa ao navegador que este é um documento HTML5 atual. -->
+
+<html lang="pt-BR">
+<!-- <html> é a tag raiz que envolve todo o conteúdo da página. O atributo lang define o idioma. -->
+
+<head>
+    <!-- <head> contém metadados sobre a página que não aparecem diretamente para o usuário. -->
+
+    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8"> define a codificação de caracteres para aceitar acentos e cedilha. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport"> garante que o site seja responsivo e se ajuste a celulares e tablets. -->
+
+    <title>Minha Página Explicativa</title>
+    <!-- <title> define o título da página que aparece na aba do navegador. -->
+
+    <style>
+        /* <style> guarda os códigos CSS para mudar as cores, fontes e o visual da página. */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <body> contém todo o conteúdo visível que o usuário final consegue enxergar e interagir. -->
+
+    <header>
+        <!-- <header> representa o cabeçalho da página ou de uma seção. Geralmente tem logos e menus. -->
+        <h1>Bem-vindo ao Guia HTML</h1>
+        <!-- <h1> é o título principal da página. Deve ser usado apenas um por página. -->
+    </header>
+
+    <main>
+        <!-- <main> indica o conteúdo principal e exclusivo desta página web. -->
+
+        <section>
+            <!-- <section> divide o conteúdo em seções temáticas logicamente relacionadas. -->
+            
+            <h2>Entendendo as Tags Básicas</h2>
+            <!-- <h2> é um subtítulo importante para organizar o conteúdo abaixo do h1. -->
+
+            <p>O parágrafo é uma das tags mais usadas no HTML.</p>
+            <!-- <p> serve para criar parágrafos de texto comum. -->
+
+            <p>Você também pode deixar textos em <strong>negrito</strong> ou em <em>itálico</em> para dar ênfase.</p>
+            <!-- <strong> serve para destacar um texto em negrito (importância forte). -->
+            <!-- <em> serve para enfatizar um texto em itálico. -->
+        </section>
+
+        <section>
+            <h2>Links e Imagens</h2>
+            
+            <p>Visite o meu <a href="https://google.com" target="_blank">link para o Google</a>.</p>
+            <!-- <a> serve para criar links. O atributo href diz o destino e target="_blank" abre em nova aba. -->
+
+            <p>Abaixo vemos uma quebra de linha física no texto:<br>Esta linha está logo abaixo.</p>
+            <!-- <br> serve para pular uma linha dentro de um texto sem criar um novo parágrafo. -->
+
+            <img src="https://placeholder.com" alt="Imagem de exemplo">
+            <!-- <img> serve para exibir imagens. src é o caminho da foto e alt é o texto alternativo de acessibilidade. -->
+        </section>
+
+        <section>
+            <h2>Listas e Agrupamentos</h2>
+            
+            <p>Lista não ordenada (com bolinhas):</p>
+            <ul>
+                <!-- <ul> serve para criar uma lista com marcadores (bolinhas), onde a ordem não importa. -->
+                <li>Item A</li>
+                <!-- <li> serve para representar cada item individual de uma lista (ul ou ol). -->
+                <li>Item B</li>
+            </ul>
+
+            <p>Lista ordenada (com números):</p>
+            <ol>
+                <!-- <ol> serve para criar uma lista numerada sequencialmente. -->
+                <li>Primeiro passo</li>
+                <li>Segundo passo</li>
+            </ol>
+
+            <div style="border: 1px solid black; padding: 10px;">
+                <!-- <div> serve como um container genérico para agrupar elementos e aplicar estilos. -->
+                <p>Este texto está dentro de uma caixa divisória (div).</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- <footer> representa o rodapé da página. Geralmente tem direitos autorais e contatos. -->
+        <p>&copy; 2026 - Criado para aprendizado.</p>
+    </footer>
+
+</body>
+</html>
